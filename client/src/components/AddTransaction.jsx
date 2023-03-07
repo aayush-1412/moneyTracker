@@ -43,12 +43,12 @@ const AddTransaction = () => {
 
 
     }).catch(err=>console.log(err))
-    return data
+    return res
   }
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
  
-    sendRequest().then((data)=>console.log(data))
+   await sendRequest()
     navigate('/myTransactions')
   };
 

@@ -24,7 +24,7 @@ const Transactions = () => {
           <Transaction
          
           id={transaction._id}
-          isUser={localStorage.getItem("userID")===transaction.user._id}
+          isUser={localStorage.getItem("userId")===transaction.user._id}
           title={transaction.title}
           description={transaction.description}
           totalExpense={transaction.totalExpense}
