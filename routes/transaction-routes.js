@@ -1,6 +1,6 @@
 import express from "express"
-import { deleteTransaction, getAllTransactions, getById, getByUserId, updateTransaction } from "../controllers/transaction-controller.js"
-import { addTransaction } from "../controllers/transaction-controller.js"
+import { deleteTransaction, getAllTransactions, getById, getByUserId, updateTransaction } from "../server/controllers/transaction-controller.js"
+import { addTransaction } from "../server/controllers/transaction-controller.js"
 
 const blogRouter =express.Router()
 blogRouter.get("/",getAllTransactions)
